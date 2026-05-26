@@ -8,11 +8,12 @@ import TutorCard from "@/components/home/TutorCard";
 import { Button, Card } from "@heroui/react";
 import WhyChooseUs from "@/components/home/WhyChoseUs";
 import HowItWorks from "@/components/home/HowItWorks";
+import Login from "./login/Page";
+import Register from "./registar/Page";
 
 export default function HomePage() {
   return (
     <div>
-      <MainNavbar/>
       <Hero />
 
       <main>
@@ -36,7 +37,6 @@ export default function HomePage() {
       </main>
       <WhyChooseUs />
       <HowItWorks />
-      <Footer />
     </div>
   );
 }
