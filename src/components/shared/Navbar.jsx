@@ -66,7 +66,7 @@ export function MainNavbar() {
                   className="w-10 h-10 rounded-full object-cover ring-2 ring-blue-600/10"
                 />
                 <div className="text-left hidden lg:block">
-                  <p className="text-sm font-bold truncate max-w-25">Nazmus Sakib</p>
+                  <p className="text-sm font-bold truncate max-w-25">Belal</p>
                   <p className="text-[10px] text-slate-500">Student</p>
                 </div>
               </button>
