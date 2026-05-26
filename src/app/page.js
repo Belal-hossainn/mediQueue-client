@@ -1,11 +1,13 @@
 
 
 
-import Hero from "@/components/Hero";
+import Hero from "@/components/home/Hero";
 import Footer from "@/components/shared/Footer";
 import { MainNavbar } from "@/components/shared/Navbar";
-import TutorCard from "@/components/TutorCard";
+import TutorCard from "@/components/home/TutorCard";
 import { Button, Card } from "@heroui/react";
+import WhyChooseUs from "@/components/home/WhyChoseUs";
+import HowItWorks from "@/components/home/HowItWorks";
 
 export default function HomePage() {
   return (
@@ -32,6 +34,8 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+      <WhyChooseUs />
+      <HowItWorks />
       <Footer />
     </div>
   );
