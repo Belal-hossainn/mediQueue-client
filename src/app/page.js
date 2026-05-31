@@ -10,31 +10,14 @@ import WhyChooseUs from "@/components/home/WhyChoseUs";
 import HowItWorks from "@/components/home/HowItWorks";
 import Login from "./login/Page";
 import Register from "./registar/Page";
+import Tutors from "./tutors/page";
+import FeaturedTutors from "@/components/home/FeaturedTutors";
 
 export default function HomePage() {
   return (
     <div>
       <Hero />
-
-      <main>
-       
-
-        {/* Tutors */}
-        <section className="container mx-auto pb-20">
-          <div className="mb-8 text-center">
-            <div>
-              <h2 className="text-3xl font-bold mx-auto">Popular Tutors</h2>
-              <p className="text-default-500 mt-2">Learn from professionals</p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4].map((item) => (
-              <TutorCard key={item} />
-            ))}
-          </div>
-        </section>
-      </main>
+      <FeaturedTutors />
       <WhyChooseUs />
       <HowItWorks />
     </div>
