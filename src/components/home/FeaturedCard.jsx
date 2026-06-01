@@ -31,9 +31,11 @@ const FeaturedCard = ({ tutor }) => {
                    </div>
                    <div className="p-8 flex flex-col grow space-y-4">
                        <div className="space-y-2">
-                           <h3 className="text-xl font-bold leading-tight line-clamp-2 hover:text-blue-600 transition-colors">
-                               {name}
-                           </h3>
+                           <Link href={`/tutors/${_id}`} >
+                               <h3 className="text-xl font-bold leading-tight line-clamp-2 hover:text-blue-600 transition-colors">
+                                   {name}
+                               </h3>
+                           </Link>
                            <p className="text-sm text-slate-500 font-medium flex items-center gap-1">
                                {subject}
                            </p>

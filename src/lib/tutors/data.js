@@ -1,5 +1,5 @@
 export const fetchTutors = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/tutor`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/tutors`);
     const tutors = await res.json();
     return tutors;
 }

@@ -1,18 +1,18 @@
 import { Button, Chip } from "@heroui/react";
-import { BookOpen, CalendarDays, Clock, UserStar } from "lucide-react";
+import { BookOpen, CalendarDays, Clock,  UserStar } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const TutorCard = ({ tutor }) => {
-    const {name, subject, photo, rating, totalSlots, sessionStartDate, hourlyFee} = tutor;
+    const {name, _id, subject, photo, rating, totalSlots, sessionStartDate, hourlyFee} = tutor;
     
     return ( 
-        <div
-            className="group flex flex-col bg-white rounded-4xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+        <div className="group flex flex-col bg-white rounded-4xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
             <div className="relative aspect-5/4 overflow-hidden">
                 <Image
                     alt={name}
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover object-top group-hover:scale-110 transition-transform duration-700"
                     src={photo}
                     fill
                 />
@@ -29,9 +29,11 @@ const TutorCard = ({ tutor }) => {
             </div>
             <div className="p-8 flex flex-col grow space-y-4">
                 <div className="space-y-2">
-                    <h3 className="text-xl font-bold leading-tight line-clamp-2 hover:text-blue-600 transition-colors">
-                        {name}
-                    </h3>
+                    <Link href={`/tutors/${_id}`} >
+                               <h3 className="text-xl font-bold leading-tight line-clamp-2 hover:text-blue-600 transition-colors">
+                                   {name}
+                               </h3>
+                           </Link>
                     <p className="text-sm text-slate-500 font-medium flex items-center gap-1">
                         {subject}
                     </p>
