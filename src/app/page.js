@@ -8,9 +8,7 @@ import TutorCard from "@/components/home/TutorCard";
 import { Button, Card } from "@heroui/react";
 import WhyChooseUs from "@/components/home/WhyChoseUs";
 import HowItWorks from "@/components/home/HowItWorks";
-import Login from "./login/Page";
-import Register from "./registar/Page";
-import Tutors from "./tutors/page";
+
 import FeaturedTutors from "@/components/home/FeaturedTutors";
 
 export default function HomePage() {
